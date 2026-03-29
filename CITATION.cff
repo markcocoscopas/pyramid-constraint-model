@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Fourth Dynasty Constraint Engine: A Throughput Model for Ancient Construction Programmes"
+type: software
+authors:
+  - family-names: "Copas"
+    given-names: "Mark"
+    orcid: "https://orcid.org/0009-0005-9777-2019"
+version: "3.0"
+date-released: "2026-03-29"
+url: "https://github.com/markcocoscopas/pyramid-constraint-model"
+repository-code: "https://github.com/markcocoscopas/pyramid-constraint-model"
+license: MIT
+keywords:
+  - pyramid construction
+  - constraint analysis
+  - throughput modelling
+  - Fourth Dynasty
+  - ancient Egypt
+  - operations research
+  - Egyptology
+  - supply chain
+  - cannibalisation hypothesis
+abstract: >-
+  A browser-based interactive tool for modelling throughput constraints
+  in the Fourth Dynasty Egyptian pyramid-building programme (c. 2610–2510 BCE).
+  Evaluates whether orthodox capacity estimates can deliver six major pyramids
+  within attested timelines using the Theory of Constraints. Includes non-linear
+  demand profiles, seasonal workforce modelling, labour allocation, sensitivity
+  analysis, reverse solving, and the Choi/Lee cannibalisation hypothesis.
