@@ -62,6 +62,6 @@ This model deliberately evaluates only primary material subsystems. Secondary co
 
 # Research Context
 
-This tool was developed in support of a series of papers applying constraint-based analysis to Fourth Dynasty construction [@copas2026a; @copas2026b; @copas2026c]. It operationalises the Constraint-Based Evaluation Framework (CBEF), a portable evaluation protocol for adjudicating orthodox and heterodox claims in archaeology by testing whether published parameters produce feasible outcomes when modelled as integrated systems.
+This tool was developed in support of a series of papers applying constraint-based analysis to Fourth Dynasty construction [@copas2026a; @copas2026b; @copas2026c]. It demonstrates the broader principle that published archaeological capacity estimates can be systematically evaluated as integrated throughput systems, testing whether stated parameters produce feasible outcomes within stated timelines.
 
 # References
