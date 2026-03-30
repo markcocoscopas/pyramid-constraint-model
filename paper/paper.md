@@ -9,7 +9,7 @@ tags:
   - Theory of Constraints
 authors:
   - name: Mark Copas
-    orcid: 0000-0000-0000-0000
+    orcid: 0009-0005-9777-2019
     affiliation: 1
 affiliations:
   - name: Independent Researcher
