@@ -64,4 +64,17 @@ This model deliberately evaluates only primary material subsystems. Secondary co
 
 This tool was developed in support of a series of papers applying constraint-based analysis to Fourth Dynasty construction [@copas2026a; @copas2026b; @copas2026c]. It demonstrates the broader principle that published archaeological capacity estimates can be systematically evaluated as integrated throughput systems, testing whether stated parameters produce feasible outcomes within stated timelines.
 
+# AI Usage Disclosure
+
+**Tools used:** Claude (Anthropic, Claude Opus 4.6) was used during the development of this software and paper.
+
+**Nature and scope of assistance:**
+
+- *Code generation:* Claude assisted with generating the HTML/JavaScript implementation of the constraint engine, including the throughput calculation engine, canvas chart rendering, UI components, and CSV export functionality. All calculation logic, parameter defaults, demand profiles, and analytical features were specified and directed by the author.
+- *Documentation:* Claude assisted with drafting the user guide, README, and CITATION.cff structure.
+- *Paper text:* Claude assisted with drafting the initial text of this paper. The author reviewed, edited, and revised all content for accuracy, tone, and neutrality.
+- *Research methodology:* The constraint-based analytical framework, the application of Theory of Constraints to ancient construction programmes, the identification of internal inconsistency in orthodox estimates, and all interpretive conclusions are the author's original work.
+
+**Confirmation of review:** The author reviewed, edited, and validated all AI-assisted outputs. All core design decisions — including the selection of parameters, the structure of the analysis, the choice of demand profiles, the labour allocation methodology, and the interpretation of results — were made by the author. The author accepts full responsibility for the accuracy and integrity of the software and this paper.
+
 # References
