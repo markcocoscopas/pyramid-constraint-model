@@ -42,7 +42,7 @@ The engine provides the following analytical capabilities:
 
 **Labour allocation.** The workforce is distributed across quarrying, transport, and placement subsystems via adjustable percentage allocations, preventing the methodological error of double-counting the same workers as simultaneously quarrying, transporting, and placing blocks.
 
-**Duration calculator.** For each structure, the engine calculates the actual construction duration at current capacity settings, independent of the assumed timeline. This translates abstract deficit figures into concrete time: at Lehner's default rates, the Great Pyramid requires approximately 68 years rather than the attested 20.
+**Duration calculator.** For each structure, the engine calculates the actual construction duration at current capacity settings, independent of the assumed timeline. This translates abstract deficit figures into concrete time — for example, a user applying Lehner's default rates to the Great Pyramid will observe a calculated duration that significantly exceeds the attested 20-year timeline.
 
 **Reverse solver.** Given a target construction duration, the engine calculates the minimum required daily rate for each subsystem and identifies which current rates are insufficient, with the required multiplier displayed.
 
@@ -58,7 +58,7 @@ The engine is implemented as a single self-contained HTML file using vanilla Jav
 
 Four capacity presets (Lehner, Stocks, High Estimate, Best Case) and three structure group presets (Sneferu Only, Giza Only, Full Dynasty) enable rapid scenario exploration. Every parameter, metric, and toggle includes a hover tooltip explaining its function, making the tool accessible to non-specialists.
 
-This model deliberately evaluates only primary material subsystems. Secondary constraints — including copper tool supply, dock throughput, barge scheduling, and food provisioning — are omitted. Each would introduce additional constraint pressure on an already infeasible system, so the reported deficits represent a lower bound on the true systemic shortfall.
+This model deliberately evaluates only primary material subsystems. Secondary constraints — including copper tool supply, dock throughput, barge scheduling, and food provisioning — are omitted. Each would introduce additional constraint pressure, so the reported deficits represent a lower bound on the true systemic shortfall at any given parameter configuration.
 
 # Research Context
 
