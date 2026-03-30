@@ -9,7 +9,7 @@ tags:
   - Theory of Constraints
 authors:
   - name: Mark Copas
-    orcid: 0000-0000-0000-0000
+    orcid: 0009-0005-9777-2019
     affiliation: 1
 affiliations:
   - name: Independent Researcher
@@ -42,7 +42,7 @@ The engine provides the following analytical capabilities:
 
 **Labour allocation.** The workforce is distributed across quarrying, transport, and placement subsystems via adjustable percentage allocations, preventing the methodological error of double-counting the same workers as simultaneously quarrying, transporting, and placing blocks.
 
-**Duration calculator.** For each structure, the engine calculates the actual construction duration at current capacity settings, independent of the assumed timeline. This translates abstract deficit figures into concrete time: at Lehner's default rates, the Great Pyramid requires approximately 68 years rather than the attested 20.
+**Duration calculator.** For each structure, the engine calculates the actual construction duration at current capacity settings, independent of the assumed timeline. This translates abstract deficit figures into concrete time — for example, a user applying Lehner's default rates to the Great Pyramid will observe a calculated duration that significantly exceeds the attested 20-year timeline.
 
 **Reverse solver.** Given a target construction duration, the engine calculates the minimum required daily rate for each subsystem and identifies which current rates are insufficient, with the required multiplier displayed.
 
@@ -58,10 +58,23 @@ The engine is implemented as a single self-contained HTML file using vanilla Jav
 
 Four capacity presets (Lehner, Stocks, High Estimate, Best Case) and three structure group presets (Sneferu Only, Giza Only, Full Dynasty) enable rapid scenario exploration. Every parameter, metric, and toggle includes a hover tooltip explaining its function, making the tool accessible to non-specialists.
 
-This model deliberately evaluates only primary material subsystems. Secondary constraints — including copper tool supply, dock throughput, barge scheduling, and food provisioning — are omitted. Each would introduce additional constraint pressure on an already infeasible system, so the reported deficits represent a lower bound on the true systemic shortfall.
+This model deliberately evaluates only primary material subsystems. Secondary constraints — including copper tool supply, dock throughput, barge scheduling, and food provisioning — are omitted. Each would introduce additional constraint pressure, so the reported deficits represent a lower bound on the true systemic shortfall at any given parameter configuration.
 
 # Research Context
 
-This tool was developed in support of a series of papers applying constraint-based analysis to Fourth Dynasty construction [@copas2026a; @copas2026b; @copas2026c]. It operationalises the Constraint-Based Evaluation Framework (CBEF), a portable evaluation protocol for adjudicating orthodox and heterodox claims in archaeology by testing whether published parameters produce feasible outcomes when modelled as integrated systems.
+This tool was developed in support of a series of papers applying constraint-based analysis to Fourth Dynasty construction [@copas2026a; @copas2026b; @copas2026c]. It demonstrates the broader principle that published archaeological capacity estimates can be systematically evaluated as integrated throughput systems, testing whether stated parameters produce feasible outcomes within stated timelines.
+
+# AI Usage Disclosure
+
+**Tools used:** Claude (Anthropic, Claude Opus 4.6) was used during the development of this software and paper.
+
+**Nature and scope of assistance:**
+
+- *Code generation:* Claude assisted with generating the HTML/JavaScript implementation of the constraint engine, including the throughput calculation engine, canvas chart rendering, UI components, and CSV export functionality. All calculation logic, parameter defaults, demand profiles, and analytical features were specified and directed by the author.
+- *Documentation:* Claude assisted with drafting the user guide, README, and CITATION.cff structure.
+- *Paper text:* Claude assisted with drafting the initial text of this paper. The author reviewed, edited, and revised all content for accuracy, tone, and neutrality.
+- *Research methodology:* The constraint-based analytical framework, the application of Theory of Constraints to ancient construction programmes, the identification of internal inconsistency in orthodox estimates, and all interpretive conclusions are the author's original work.
+
+**Confirmation of review:** The author reviewed, edited, and validated all AI-assisted outputs. All core design decisions — including the selection of parameters, the structure of the analysis, the choice of demand profiles, the labour allocation methodology, and the interpretation of results — were made by the author. The author accepts full responsibility for the accuracy and integrity of the software and this paper.
 
 # References

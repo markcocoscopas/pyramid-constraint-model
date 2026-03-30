@@ -2,7 +2,7 @@
 
 **A browser-based interactive tool for modelling throughput constraints in the Fourth Dynasty Egyptian pyramid-building programme.**
 
-[![DOI](https://zenodo.org/badge/DOI/PENDING.svg)](https://doi.org/PENDING)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19332531.svg)](https://doi.org/10.5281/zenodo.19332531)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
