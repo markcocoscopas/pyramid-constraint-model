@@ -1,6 +1,6 @@
 # Fourth Dynasty Constraint Engine — User Guide
 
-**Version 3.0**
+**Version 3.1**
 
 ---
 
@@ -104,7 +104,7 @@ Click to expand. Shows enabled structure count (e.g., "6/6 enabled"). Each struc
 - **Overbuilt Mass** — (Cannibalisation mode only) Initial mass before carving down.
 - **Start/End BCE** — Construction timeline.
 
-**Duration Calculator** — blue box below each structure showing actual build time at current capacity, with overrun warning and binding constraint identification.
+**Duration Calculator** — blue box below each structure. In **programme mode** (multiple structures enabled), shows the duration accounting for shared capacity across concurrent builds, with the solo estimate shown for comparison. In **solo mode** (single structure), shows the solo duration with binding constraint. Overrun warnings indicate how many years beyond the set timeline and how many other structures are sharing capacity.
 
 ---
 
@@ -130,7 +130,7 @@ Top of the main panel. Each has a hover tooltip.
 - **Programme Demand** — Total stone across all enabled structures, with year span and structure count.
 - **Annual Capacity** — Combined throughput of all subsystems.
 - **Accumulated Deficit** — Cumulative shortfall (orange if above zero).
-- **Actual Duration** — Longest structure's real build time at current capacity (blue card).
+- **Programme Duration** — (blue card) Total time from first structure start to last completion, with capacity shared equally across concurrent builds. The subtitle shows the solo maximum for comparison — that's the longest single structure if it had all capacity to itself. In solo mode (one structure enabled), shows the solo duration directly.
 - **Recycled** — (Cannibalisation mode) Total recycled stone.
 - **Deficit Δ** — Percentage change vs orthodox model. Negative = cannibalisation makes it worse.
 - **Bottleneck** — Most frequently binding subsystem.
@@ -233,7 +233,11 @@ Annual capacity = **minimum** of quarrying, transport, and placement per subsyst
 
 ### Duration Calculator
 
-Actual duration = **maximum** of each subsystem's independent time (material ÷ annual capacity). The slowest subsystem determines the real build time since all must complete.
+Two modes of calculation:
+
+**Solo duration** = **maximum** of each subsystem's independent time (material ÷ annual capacity). The slowest subsystem determines the build time since all must complete. This is shown when a single structure is enabled.
+
+**Programme duration** = year-by-year simulation where capacity is shared equally across all structures under concurrent construction. Each year, the available capacity for each subsystem is divided by the number of active structures, and material is depleted accordingly. A structure completes when all its material has been delivered. This produces longer — and more realistic — durations than solo estimates because concurrent builds compete for the same quarrying, transport, and placement resources. The programme duration is shown in the summary card when multiple structures are enabled, and per-structure durations in the sidebar reflect the shared-capacity calculation.
 
 ### Labour Allocation
 
@@ -299,10 +303,12 @@ The following results are directly producible by anyone using this tool:
 
 5. **Sneferu front-loading**: The overlapping construction of Meidum, Bent, and Red pyramids creates demand spikes that saturate the supply chain before Giza construction begins.
 
+6. **Shared capacity compounding**: Per-structure durations are significantly longer in programme mode than in solo mode, because concurrent builds share the same quarrying, transport, and placement resources. A structure that takes 68 years solo may take considerably longer when competing with two or three other active builds for the same capacity.
+
 ---
 
 ## Citation
 
-> Fourth Dynasty Constraint Engine, v3.0. Full dynasty constrained throughput model with sensitivity analysis, labour allocation, and cannibalisation hypothesis testing. Developed in support of the Constraint-Based Evaluation Framework for disputed claims in archaeology.
+> Fourth Dynasty Constraint Engine, v3.1. Full dynasty constrained throughput model with shared-capacity duration modelling, sensitivity analysis, labour allocation, and cannibalisation hypothesis testing. Developed in support of the Constraint-Based Evaluation Framework for disputed claims in archaeology.
 
 For methodology: Papers 2–4, Zenodo (Copas, 2026).
