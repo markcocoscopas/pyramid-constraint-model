@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Giza Programme Constraint Analysis Engine v3.0</title>
+<title>Fourth Dynasty Constraint Engine v3.1</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
 *{margin:0;padding:0;box-sizing:border-box}
@@ -101,7 +101,7 @@ canvas{width:100%!important;border-radius:4px}
 </head>
 <body>
 <div class="header">
-  <div><h1>FOURTH DYNASTY CONSTRAINT ENGINE</h1><div class="sub">v3.0 · SNEFERU → GIZA · THROUGHPUT · CANNIBALISATION · SENSITIVITY</div></div>
+  <div><h1>FOURTH DYNASTY CONSTRAINT ENGINE</h1><div class="sub">v3.1 · SNEFERU → GIZA · THROUGHPUT · CANNIBALISATION · SENSITIVITY</div></div>
   <div class="toggles" id="toggleBar"></div>
 </div>
 <div id="helpBox" class="help-box" style="display:none"></div>
@@ -135,7 +135,7 @@ var TT={
   accDef:"Cumulative shortfall. Above zero = programme cannot complete in stated timelines.",
   priBot:"Subsystem binding most frequently.",avgU:"Avg core utilisation. >100% = over-committed.",
   stoneR:"Stone recycled from overbuilt masses (cannibalisation).",defRed:"Deficit change vs orthodox model.",
-  actDur:"How long construction actually takes at current capacity, ignoring set timeline.",
+  actDur:"Programme duration: total time from first structure start to last completion, with capacity shared equally across concurrent builds. Solo max shown for comparison \u2014 that\u2019s the longest single structure if it had all capacity to itself.",
   qr:"Daily core limestone quarrying from Giza/Dahshur plateau quarries.",
   tq:"Daily output from Tura quarries. Fine casing limestone.",
   aq:"Daily output from Aswan quarries, 500mi upstream. Granite.",
@@ -175,6 +175,40 @@ function calcDuration(s,c,cann,seas){
   var maxY=Math.max(cY,tY,aY);var b="Core Quarry";
   if(tY>=cY&&tY>=aY)b="Tura Supply";if(aY>=cY&&aY>=tY)b="Aswan Granite";
   return{years:Math.ceil(maxY),binding:b}}
+
+// ── Programme Duration (shared capacity) ──
+function calcProgDuration(structs,c,cann,seas){
+  var active=structs.filter(function(s){return s.enabled});
+  if(active.length===0)return{progYears:0,perStruct:{},firstStart:0,lastEnd:0};
+  var cap=sCap(c,seas);var eCC=Math.min(cap.aQ,cap.aTr,cap.aP);var eTC=Math.min(cap.aT,cap.aTT);var eAC=Math.min(cap.aA,cap.aAT);
+  if(eCC+eTC+eAC<=0)return{progYears:Infinity,perStruct:{},firstStart:0,lastEnd:0};
+  // Initialise remaining material per structure
+  var remaining={};active.forEach(function(s){
+    remaining[s.id]={core:cann?s.ob*(s.cl/s.tm):s.cl,tura:s.cs,aswan:s.gr,done:false,startY:s.sy,actualEnd:null}});
+  var sorted=active.slice().sort(function(a,b){return a.sy-b.sy});
+  var firstStart=sorted[0].sy;
+  var maxYear=firstStart+500;// safety limit
+  for(var y=firstStart;y<maxYear;y++){
+    // Count active structures this year (started and not done)
+    var activeThisYear=[];
+    sorted.forEach(function(s){if(y>=s.sy&&!remaining[s.id].done)activeThisYear.push(s)});
+    if(activeThisYear.length===0){
+      // Check if all done
+      var allDone=true;sorted.forEach(function(s){if(!remaining[s.id].done)allDone=false});
+      if(allDone)break;
+      continue}
+    var n=activeThisYear.length;
+    // Split capacity equally across concurrent structures
+    var coreSh=eCC/n;var turaSh=eTC/n;var aswanSh=eAC/n;
+    activeThisYear.forEach(function(s){var r=remaining[s.id];
+      r.core=Math.max(0,r.core-coreSh);r.tura=Math.max(0,r.tura-turaSh);r.aswan=Math.max(0,r.aswan-aswanSh);
+      if(r.core<=0&&r.tura<=0&&r.aswan<=0){r.done=true;r.actualEnd=y}})}
+  // Calculate results
+  var lastEnd=firstStart;var perStruct={};
+  sorted.forEach(function(s){var r=remaining[s.id];
+    var end=r.actualEnd||maxYear;if(end>lastEnd)lastEnd=end;
+    perStruct[s.id]={years:end-s.sy+1,binding:"Shared capacity",startY:s.sy,endY:end}});
+  return{progYears:lastEnd-firstStart+1,perStruct:perStruct,firstStart:firstStart,lastEnd:lastEnd}}
 
 // ── Reverse Solver ──
 function reverseSolve(s,tgt,c,cann,seas){
@@ -297,9 +331,11 @@ function render(){
   var bl=S.cann?run(structs,C,false,S.nl,S.seas):null;
   var res=an.res,sum=an.sum,hasData=res.length>0;
   var bfs=Object.keys(sum.bf).sort(function(a,b){return sum.bf[b]-sum.bf[a]});
-  var durations=[];var totalActualYrs=0;
-  structs.forEach(function(s){if(s.enabled){var d=calcDuration(s,C,S.cann,S.seas);durations.push({name:s.name,dur:d,setYrs:Math.abs(s.ey-s.sy)});
-    if(d.years>totalActualYrs)totalActualYrs=d.years}});
+  var enCount=structs.filter(function(s){return s.enabled}).length;
+  // Solo vs programme duration
+  var progDur=calcProgDuration(structs,C,S.cann,S.seas);
+  var soloMax=0;
+  structs.forEach(function(s){if(s.enabled){var d=calcDuration(s,C,S.cann,S.seas);if(d.years>soloMax)soloMax=d.years}});
 
   // Header toggles
   document.getElementById("toggleBar").innerHTML=
@@ -339,7 +375,7 @@ function render(){
     cardH("Programme Demand",hasData?ft(sum.totD):"0 t",hasData?sum.py+" yr / "+enCount+" structures":"none","","progD")+
     cardH("Annual Capacity",hasData?ft(res[0].totCap):"0 t","combined","","annCap")+
     cardH("Accumulated Deficit",hasData?ft(sum.totDef):"0 t",sum.totDef>0?sum.dfy+" deficit yrs":"within capacity",sum.totDef>0?"alert":"","accDef")+
-    (hasData?cardH("Actual Duration",totalActualYrs+" yrs",durations.length===1?"for "+durations[0].name.split("(")[1].replace(")",""):"longest structure","dur","actDur"):"")+
+    (hasData?cardH("Programme Duration",progDur.progYears+" yrs",enCount>1?"shared capacity (solo max: "+soloMax+"y)":"solo structure","dur","actDur"):"")+
     (S.cann?cardH("Recycled",ft(sum.totR),"cannibalisation","hl","stoneR"):"")+
     (S.cann&&bl?cardH("Deficit \u0394",fp(defRed),defRed<0?"worse":"vs orthodox",defRed<0?"alert":"hl","defRed"):"")+
     cardH("Bottleneck",bfs[0]||"None",(sum.bf[bfs[0]]||0)+"y binding","alert","priBot")+
@@ -471,7 +507,14 @@ function slG(sect,key,label,val,min,max,step,unit,ttKey){
 function cardH(label,value,sub,cls,ttKey){
   return'<div class="card '+(cls||"")+'"><div class="lbl"><span>'+label+'</span>'+(ttKey?tip(ttKey):"")+'</div><div class="num">'+value+'</div>'+(sub?'<div class="sub">'+sub+'</div>':'')+'</div>'}
 function structEd(s,i){
-  var dur=calcDuration(s,C,S.cann,S.seas);var setY=Math.abs(s.ey-s.sy);var over=dur.years>setY;
+  var soloDur=calcDuration(s,C,S.cann,S.seas);var setY=Math.abs(s.ey-s.sy);
+  var enCount=structs.filter(function(x){return x.enabled}).length;
+  var progDur=calcProgDuration(structs,C,S.cann,S.seas);
+  var pd=progDur.perStruct[s.id];
+  var sharedYrs=pd?pd.years:soloDur.years;
+  var showShared=enCount>1&&pd;
+  var overSolo=soloDur.years>setY;
+  var overShared=showShared&&sharedYrs>setY;
   var p='structs['+i+']';
   return'<div class="struct-ed'+(s.enabled?"":" disabled")+'"><div class="sname"><span>'+s.name+'</span><span style="display:flex;gap:3px">'+
     '<button class="s-btn '+(s.enabled?"on":"")+'" onclick="event.stopPropagation();S.activeGroup=\'\';structs['+i+'].enabled=!structs['+i+'].enabled;render()">'+(s.enabled?"On":"Off")+'</button>'+
@@ -481,7 +524,14 @@ function structEd(s,i){
     sEd(p,"cs","Tura",s.cs,10000,1000000,10000,"t")+sEd(p,"gr","Granite",s.gr,5000,500000,5000,"t")+
     (S.cann?sEd(p,"ob","Overbuilt",s.ob,s.tm,15000000,100000,"t"):"")+
     sEd(p,"sy","Start BCE",Math.abs(s.sy),2400,2620,1,"",true)+sEd(p,"ey","End BCE",Math.abs(s.ey),2400,2620,1,"",true)+
-    '</div><div class="dur-box">Actual duration: <span class="dv">'+dur.years+' yrs</span> (set: '+setY+')'+(over?'<div class="warn">\u26A0 Overrun: '+(dur.years-setY)+'y. Bound by '+dur.binding+'</div>':'<div style="color:#4a9;font-size:8.5px;margin-top:1px">\u2713 Achievable</div>')+'</div></div>'}
+    '</div><div class="dur-box">'+
+    (showShared?
+      'Programme duration: <span class="dv">'+sharedYrs+' yrs</span> (set: '+setY+', solo: '+soloDur.years+'y)'+
+      (overShared?'<div class="warn">\u26A0 Overrun: '+(sharedYrs-setY)+'y sharing capacity with '+(enCount-1)+' other structure'+(enCount>2?"s":"")+'</div>':'<div style="color:#4a9;font-size:8.5px;margin-top:1px">\u2713 Achievable in programme</div>')
+    :
+      'Solo duration: <span class="dv">'+soloDur.years+' yrs</span> (set: '+setY+')'+
+      (overSolo?'<div class="warn">\u26A0 Overrun: '+(soloDur.years-setY)+'y. Bound by '+soloDur.binding+'</div>':'<div style="color:#4a9;font-size:8.5px;margin-top:1px">\u2713 Achievable</div>')
+    )+'</div></div>'}
 function sEd(p,key,label,val,min,max,step,unit,neg){
   return'<div class="slider-row"><div class="top"><label>'+label+'</label><span class="val">'+val.toLocaleString()+(unit?" "+unit:"")+'</span></div>'+
     '<input type="range" min="'+min+'" max="'+max+'" step="'+step+'" value="'+val+'" oninput="'+p+'.'+key+'='+(neg?"-":"")+'Number(this.value);render()"></div>'}
