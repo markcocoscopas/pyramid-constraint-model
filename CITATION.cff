@@ -6,10 +6,17 @@ authors:
   - family-names: "Copas"
     given-names: "Mark"
     orcid: "https://orcid.org/0009-0005-9777-2019"
-version: "3.0"
-date-released: "2026-03-29"
+version: "4.1"
+date-released: "2026-07-23"
 url: "https://github.com/markcocoscopas/pyramid-constraint-model"
-doi: "10.5281/zenodo.19332531"
+doi: "10.5281/zenodo.19332530"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.19332530"
+    description: "Concept DOI. Always resolves to the most recent version."
+  - type: doi
+    value: "10.5281/zenodo.19332531"
+    description: "Version DOI for the archived v3 release, cited by the paper series."
 repository-code: "https://github.com/markcocoscopas/pyramid-constraint-model"
 license: MIT
 keywords:
@@ -24,8 +31,11 @@ keywords:
   - cannibalisation hypothesis
 abstract: >-
   A browser-based interactive tool for modelling throughput constraints
-  in the Fourth Dynasty Egyptian pyramid-building programme (c. 2610–2510 BCE).
+  in the Fourth Dynasty Egyptian pyramid-building programme (c. 2610-2510 BCE).
   Evaluates whether orthodox capacity estimates can deliver six major pyramids
   within attested timelines using the Theory of Constraints. Includes non-linear
-  demand profiles, seasonal workforce modelling, labour allocation, sensitivity
-  analysis, reverse solving, and the Choi/Lee cannibalisation hypothesis.
+  demand profiles normalised per structure and material stream, seasonal workforce
+  modelling, four-way labour allocation, per-stream dressing for core limestone,
+  Tura casing, and Aswan granite, sensitivity analysis, reverse solving, and the
+  Choi/Lee cannibalisation hypothesis. Ships with a dependency-free regression
+  harness that verifies the model against a recorded fixture set.

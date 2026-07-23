@@ -1,0 +1,3593 @@
+{
+ "engineVersion": "4.1",
+ "generated": "characterisation of current behaviour, not a statement of intended behaviour",
+ "cases": [
+  {
+   "name": "preset-lehner--scope-all",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "meidum",
+     "bent",
+     "red",
+     "khufu",
+     "khafre",
+     "menkaure"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 101,
+    "rowDigest": "a7889b3c",
+    "colSums": {
+     "cD": "19075000.000000007",
+     "tD": "539999.9999999998",
+     "aD": "183000.0000000001",
+     "totD": "19798000",
+     "ru": "0",
+     "effD": "19798000",
+     "cDef": "12319938.231971145",
+     "tDef": "18774.18018018021",
+     "aDef": "66006.28671078703",
+     "totDef": "12404718.698862113",
+     "accDef": "795835575.4880067",
+     "ra": "0",
+     "cU": "13778.609698679797",
+     "tU": "4175.042523581259",
+     "aU": "4410.811830089546"
+    },
+    "bcSeq": "60bf1c7b",
+    "sum": {
+     "totD": "19798000",
+     "totCap": "10497566.3",
+     "totDef": "12404718.698862113",
+     "totR": "0",
+     "py": "101",
+     "dfy": "74",
+     "avgU": "136.42187820475047",
+     "bf": {
+      "Placement": 65,
+      "Granite Dressing": 9
+     }
+    },
+    "durations": [
+     {
+      "id": "meidum",
+      "years": "7.5",
+      "buildYears": "7",
+      "finYears": "0.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "bent",
+      "years": "40",
+      "buildYears": "39",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "red",
+      "years": "46",
+      "buildYears": "45",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "khufu",
+      "years": "70",
+      "buildYears": "68",
+      "finYears": "2",
+      "binding": "Placement"
+     },
+     {
+      "id": "khafre",
+      "years": "56.5",
+      "buildYears": "55",
+      "finYears": "1.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "menkaure",
+      "years": "38.5",
+      "buildYears": "38",
+      "finYears": "0.5",
+      "binding": "Granite Dressing"
+     }
+    ]
+   }
+  },
+  {
+   "name": "preset-lehner--scope-sneferu",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "meidum",
+     "bent",
+     "red"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 36,
+    "rowDigest": "429bc2a7",
+    "colSums": {
+     "cD": "7860000",
+     "tD": "245000.00000000006",
+     "aD": "35000",
+     "totD": "8140000",
+     "ru": "0",
+     "effD": "8140000",
+     "cDef": "5210679.78241727",
+     "tDef": "13910.198952879615",
+     "aDef": "169.1300458521273",
+     "totDef": "5224759.111416002",
+     "accDef": "72505044.15275788",
+     "ra": "0",
+     "cU": "5463.589481285685",
+     "tU": "1894.2322560692755",
+     "aU": "1082.4184320395855"
+    },
+    "bcSeq": "f25d8010",
+    "sum": {
+     "totD": "8140000",
+     "totCap": "3741706.8000000003",
+     "totDef": "5224759.111416002",
+     "totR": "0",
+     "py": "36",
+     "dfy": "25",
+     "avgU": "151.7663744801579",
+     "bf": {
+      "Placement": 25
+     }
+    },
+    "durations": [
+     {
+      "id": "meidum",
+      "years": "7.5",
+      "buildYears": "7",
+      "finYears": "0.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "bent",
+      "years": "40",
+      "buildYears": "39",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "red",
+      "years": "46",
+      "buildYears": "45",
+      "finYears": "1",
+      "binding": "Placement"
+     }
+    ]
+   }
+  },
+  {
+   "name": "preset-lehner--scope-giza",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "khufu",
+     "khafre",
+     "menkaure"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 71,
+    "rowDigest": "b65e99fa",
+    "colSums": {
+     "cD": "11214999.999999993",
+     "tD": "294999.9999999999",
+     "aD": "148000",
+     "totD": "11658000.000000002",
+     "ru": "0",
+     "effD": "11658000.000000002",
+     "cDef": "6670414.4495538715",
+     "tDef": "0",
+     "aDef": "65837.1566649349",
+     "totDef": "6736251.606218807",
+     "accDef": "353549678.7676584",
+     "ra": "0",
+     "cU": "9239.592059565819",
+     "tU": "2280.810267511986",
+     "aU": "3328.3933980499605"
+    },
+    "bcSeq": "7ef6c48b",
+    "sum": {
+     "totD": "11658000.000000002",
+     "totCap": "7379477.3",
+     "totDef": "6736251.606218807",
+     "totR": "0",
+     "py": "71",
+     "dfy": "54",
+     "avgU": "130.13509943050448",
+     "bf": {
+      "Placement": 45,
+      "Granite Dressing": 9
+     }
+    },
+    "durations": [
+     {
+      "id": "khufu",
+      "years": "70",
+      "buildYears": "68",
+      "finYears": "2",
+      "binding": "Placement"
+     },
+     {
+      "id": "khafre",
+      "years": "56.5",
+      "buildYears": "55",
+      "finYears": "1.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "menkaure",
+      "years": "38.5",
+      "buildYears": "38",
+      "finYears": "0.5",
+      "binding": "Granite Dressing"
+     }
+    ]
+   }
+  },
+  {
+   "name": "preset-stocks--scope-all",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 240,
+     "tq": 30,
+     "aq": 10,
+     "dc": 280,
+     "dt": 40,
+     "da": 3,
+     "tc": 220,
+     "tt": 25,
+     "at": 8,
+     "pr": 200,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "meidum",
+     "bent",
+     "red",
+     "khufu",
+     "khafre",
+     "menkaure"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 101,
+    "rowDigest": "bdfee577",
+    "colSums": {
+     "cD": "19075000.000000007",
+     "tD": "539999.9999999998",
+     "aD": "183000.0000000001",
+     "totD": "19798000",
+     "ru": "0",
+     "effD": "19798000",
+     "cDef": "13962227.782417266",
+     "tDef": "69115.31011421936",
+     "aDef": "119928.75188996148",
+     "totDef": "14151271.844421454",
+     "accDef": "894225672.0761862",
+     "ra": "0",
+     "cU": "14608.969375688052",
+     "tU": "5834.683954619125",
+     "aU": "9822.1196200274"
+    },
+    "bcSeq": "4bddb45a",
+    "sum": {
+     "totD": "19798000",
+     "totCap": "7364622.050000001",
+     "totDef": "14151271.844421454",
+     "totR": "0",
+     "py": "101",
+     "dfy": "85",
+     "avgU": "144.64326114542627",
+     "bf": {
+      "Placement": 66,
+      "Granite Dressing": 19
+     }
+    },
+    "durations": [
+     {
+      "id": "meidum",
+      "years": "10.5",
+      "buildYears": "10",
+      "finYears": "0.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "bent",
+      "years": "55",
+      "buildYears": "54",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "red",
+      "years": "63",
+      "buildYears": "62",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "khufu",
+      "years": "97",
+      "buildYears": "95",
+      "finYears": "2",
+      "binding": "Placement"
+     },
+     {
+      "id": "khafre",
+      "years": "77.5",
+      "buildYears": "76",
+      "finYears": "1.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "menkaure",
+      "years": "124.5",
+      "buildYears": "124",
+      "finYears": "0.5",
+      "binding": "Granite Dressing"
+     }
+    ]
+   }
+  },
+  {
+   "name": "preset-stocks--scope-sneferu",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 240,
+     "tq": 30,
+     "aq": 10,
+     "dc": 280,
+     "dt": 40,
+     "da": 3,
+     "tc": 220,
+     "tt": 25,
+     "at": 8,
+     "pr": 200,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "meidum",
+     "bent",
+     "red"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 36,
+    "rowDigest": "1f90bc86",
+    "colSums": {
+     "cD": "7860000",
+     "tD": "245000.00000000006",
+     "aD": "35000",
+     "totD": "8140000",
+     "ru": "0",
+     "effD": "8140000",
+     "cDef": "5837599.782417269",
+     "tDef": "52355.15706806286",
+     "aDef": "13122.304351967048",
+     "totDef": "5903077.2438373",
+     "accDef": "81198395.30278185",
+     "ra": "0",
+     "cU": "5725.930290280627",
+     "tU": "2647.21772015127",
+     "aU": "3135.670467921841"
+    },
+    "bcSeq": "f25d8010",
+    "sum": {
+     "totD": "8140000",
+     "totCap": "2625013.8000000003",
+     "totDef": "5903077.2438373",
+     "totR": "0",
+     "py": "36",
+     "dfy": "25",
+     "avgU": "159.05361917446186",
+     "bf": {
+      "Placement": 25
+     }
+    },
+    "durations": [
+     {
+      "id": "meidum",
+      "years": "10.5",
+      "buildYears": "10",
+      "finYears": "0.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "bent",
+      "years": "55",
+      "buildYears": "54",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "red",
+      "years": "63",
+      "buildYears": "62",
+      "finYears": "1",
+      "binding": "Placement"
+     }
+    ]
+   }
+  },
+  {
+   "name": "preset-stocks--scope-giza",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 240,
+     "tq": 30,
+     "aq": 10,
+     "dc": 280,
+     "dt": 40,
+     "da": 3,
+     "tc": 220,
+     "tt": 25,
+     "at": 8,
+     "pr": 200,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "khufu",
+     "khafre",
+     "menkaure"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 71,
+    "rowDigest": "24c14491",
+    "colSums": {
+     "cD": "11214999.999999993",
+     "tD": "294999.9999999999",
+     "aD": "148000",
+     "totD": "11658000.000000002",
+     "ru": "0",
+     "effD": "11658000.000000002",
+     "cDef": "7811167.999999999",
+     "tDef": "10543.936829940298",
+     "aDef": "106691.84591044803",
+     "totDef": "7928403.782740388",
+     "accDef": "407578601.4057508",
+     "ra": "0",
+     "cU": "9883.039085407423",
+     "tU": "3187.466234467858",
+     "aU": "6686.449152105561"
+    },
+    "bcSeq": "93f1e2ca",
+    "sum": {
+     "totD": "11658000.000000002",
+     "totCap": "5177110.55",
+     "totDef": "7928403.782740388",
+     "totR": "0",
+     "py": "71",
+     "dfy": "65",
+     "avgU": "139.19773359728765",
+     "bf": {
+      "Placement": 46,
+      "Granite Dressing": 19
+     }
+    },
+    "durations": [
+     {
+      "id": "khufu",
+      "years": "97",
+      "buildYears": "95",
+      "finYears": "2",
+      "binding": "Placement"
+     },
+     {
+      "id": "khafre",
+      "years": "77.5",
+      "buildYears": "76",
+      "finYears": "1.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "menkaure",
+      "years": "124.5",
+      "buildYears": "124",
+      "finYears": "0.5",
+      "binding": "Granite Dressing"
+     }
+    ]
+   }
+  },
+  {
+   "name": "preset-high--scope-all",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 500,
+     "tq": 60,
+     "aq": 20,
+     "dc": 500,
+     "dt": 70,
+     "da": 20,
+     "tc": 450,
+     "tt": 50,
+     "at": 15,
+     "pr": 400,
+     "wf": 40000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "meidum",
+     "bent",
+     "red",
+     "khufu",
+     "khafre",
+     "menkaure"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 101,
+    "rowDigest": "4c71ea20",
+    "colSums": {
+     "cD": "19075000.000000007",
+     "tD": "539999.9999999998",
+     "aD": "183000.0000000001",
+     "totD": "19798000",
+     "ru": "0",
+     "effD": "19798000",
+     "cDef": "5731650.36295158",
+     "tDef": "0",
+     "aDef": "46774.3994740544",
+     "totDef": "5778424.762425635",
+     "accDef": "400986254.4388481",
+     "ra": "0",
+     "cU": "8915.51825530006",
+     "tU": "2917.3419773095625",
+     "aU": "3071.518569132594"
+    },
+    "bcSeq": "5fd1a8a3",
+    "sum": {
+     "totD": "19798000",
+     "totCap": "22692417.400000002",
+     "totDef": "5778424.762425635",
+     "totR": "0",
+     "py": "101",
+     "dfy": "54",
+     "avgU": "88.27245797326792",
+     "bf": {
+      "Placement": 47,
+      "Aswan Transport": 7
+     }
+    },
+    "durations": [
+     {
+      "id": "meidum",
+      "years": "4.5",
+      "buildYears": "4",
+      "finYears": "0.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "bent",
+      "years": "18",
+      "buildYears": "17",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "red",
+      "years": "21",
+      "buildYears": "20",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "khufu",
+      "years": "32",
+      "buildYears": "30",
+      "finYears": "2",
+      "binding": "Placement"
+     },
+     {
+      "id": "khafre",
+      "years": "25.5",
+      "buildYears": "24",
+      "finYears": "1.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "menkaure",
+      "years": "22.5",
+      "buildYears": "22",
+      "finYears": "0.5",
+      "binding": "Aswan Transport"
+     }
+    ]
+   }
+  },
+  {
+   "name": "preset-high--scope-sneferu",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 500,
+     "tq": 60,
+     "aq": 20,
+     "dc": 500,
+     "dt": 70,
+     "da": 20,
+     "tc": 450,
+     "tt": 50,
+     "at": 15,
+     "pr": 400,
+     "wf": 40000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "meidum",
+     "bent",
+     "red"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 36,
+    "rowDigest": "50123df0",
+    "colSums": {
+     "cD": "7860000",
+     "tD": "245000.00000000006",
+     "aD": "35000",
+     "totD": "8140000",
+     "ru": "0",
+     "effD": "8140000",
+     "cDef": "2482924.102585776",
+     "tDef": "0",
+     "aDef": "0",
+     "totDef": "2482924.102585776",
+     "accDef": "36155681.493499935",
+     "ra": "0",
+     "cU": "3693.352365549804",
+     "tU": "1323.608860075635",
+     "aU": "630.2899333693498"
+    },
+    "bcSeq": "68f02324",
+    "sum": {
+     "totD": "8140000",
+     "totCap": "8088386.4",
+     "totDef": "2482924.102585776",
+     "totR": "0",
+     "py": "36",
+     "dfy": "21",
+     "avgU": "102.59312126527233",
+     "bf": {
+      "Placement": 21
+     }
+    },
+    "durations": [
+     {
+      "id": "meidum",
+      "years": "4.5",
+      "buildYears": "4",
+      "finYears": "0.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "bent",
+      "years": "18",
+      "buildYears": "17",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "red",
+      "years": "21",
+      "buildYears": "20",
+      "finYears": "1",
+      "binding": "Placement"
+     }
+    ]
+   }
+  },
+  {
+   "name": "preset-high--scope-giza",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 500,
+     "tq": 60,
+     "aq": 20,
+     "dc": 500,
+     "dt": 70,
+     "da": 20,
+     "tc": 450,
+     "tt": 50,
+     "at": 15,
+     "pr": 400,
+     "wf": 40000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "khufu",
+     "khafre",
+     "menkaure"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 71,
+    "rowDigest": "f83df60b",
+    "colSums": {
+     "cD": "11214999.999999993",
+     "tD": "294999.9999999999",
+     "aD": "148000",
+     "totD": "11658000.000000002",
+     "ru": "0",
+     "effD": "11658000.000000002",
+     "cDef": "2368184.1389866658",
+     "tDef": "0",
+     "aDef": "46774.3994740544",
+     "totDef": "2414958.5384607203",
+     "accDef": "143497019.74010584",
+     "ra": "0",
+     "cU": "5560.434901223316",
+     "tU": "1593.733117233929",
+     "aU": "2441.228635763245"
+    },
+    "bcSeq": "7c6424bc",
+    "sum": {
+     "totD": "11658000.000000002",
+     "totCap": "15952095.400000002",
+     "totDef": "2414958.5384607203",
+     "totR": "0",
+     "py": "71",
+     "dfy": "35",
+     "avgU": "78.31598452427205",
+     "bf": {
+      "Placement": 28,
+      "Aswan Transport": 7
+     }
+    },
+    "durations": [
+     {
+      "id": "khufu",
+      "years": "32",
+      "buildYears": "30",
+      "finYears": "2",
+      "binding": "Placement"
+     },
+     {
+      "id": "khafre",
+      "years": "25.5",
+      "buildYears": "24",
+      "finYears": "1.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "menkaure",
+      "years": "22.5",
+      "buildYears": "22",
+      "finYears": "0.5",
+      "binding": "Aswan Transport"
+     }
+    ]
+   }
+  },
+  {
+   "name": "preset-best--scope-all",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 800,
+     "tq": 120,
+     "aq": 50,
+     "dc": 800,
+     "dt": 130,
+     "da": 40,
+     "tc": 800,
+     "tt": 100,
+     "at": 40,
+     "pr": 600,
+     "wf": 100000,
+     "wd": 350,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "meidum",
+     "bent",
+     "red",
+     "khufu",
+     "khafre",
+     "menkaure"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 101,
+    "rowDigest": "6dd5d946",
+    "colSums": {
+     "cD": "19075000.000000007",
+     "tD": "539999.9999999998",
+     "aD": "183000.0000000001",
+     "totD": "19798000",
+     "ru": "0",
+     "effD": "19798000",
+     "cDef": "0",
+     "tDef": "0",
+     "aDef": "4836.510664147481",
+     "totDef": "4836.510664147481",
+     "accDef": "67711.14929806476",
+     "ra": "0",
+     "cU": "2535.544141729939",
+     "tU": "1458.6709886547812",
+     "aU": "1414.8755218803144"
+    },
+    "bcSeq": "886c4dfc",
+    "sum": {
+     "totD": "19798000",
+     "totCap": "81028058",
+     "totDef": "4836.510664147481",
+     "totR": "0",
+     "py": "101",
+     "dfy": "3",
+     "avgU": "25.10439744287068",
+     "bf": {
+      "Granite Dressing": 3
+     }
+    },
+    "durations": [
+     {
+      "id": "meidum",
+      "years": "1.5",
+      "buildYears": "1",
+      "finYears": "0.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "bent",
+      "years": "6",
+      "buildYears": "5",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "red",
+      "years": "7",
+      "buildYears": "6",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "khufu",
+      "years": "10",
+      "buildYears": "8",
+      "finYears": "2",
+      "binding": "Placement"
+     },
+     {
+      "id": "khafre",
+      "years": "8.5",
+      "buildYears": "7",
+      "finYears": "1.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "menkaure",
+      "years": "10.5",
+      "buildYears": "10",
+      "finYears": "0.5",
+      "binding": "Granite Dressing"
+     }
+    ]
+   }
+  },
+  {
+   "name": "preset-best--scope-sneferu",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 800,
+     "tq": 120,
+     "aq": 50,
+     "dc": 800,
+     "dt": 130,
+     "da": 40,
+     "tc": 800,
+     "tt": 100,
+     "at": 40,
+     "pr": 600,
+     "wf": 100000,
+     "wd": 350,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "meidum",
+     "bent",
+     "red"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 36,
+    "rowDigest": "fa43cb76",
+    "colSums": {
+     "cD": "7860000",
+     "tD": "245000.00000000006",
+     "aD": "35000",
+     "totD": "8140000",
+     "ru": "0",
+     "effD": "8140000",
+     "cDef": "0",
+     "tDef": "0",
+     "aDef": "0",
+     "totDef": "0",
+     "accDef": "0",
+     "ra": "0",
+     "cU": "1044.7904038792826",
+     "tU": "661.8044300378175",
+     "aU": "270.60460800989637"
+    },
+    "bcSeq": "6b9355eb",
+    "sum": {
+     "totD": "8140000",
+     "totCap": "28881288",
+     "totDef": "0",
+     "totR": "0",
+     "py": "36",
+     "dfy": "0",
+     "avgU": "29.021955663313406",
+     "bf": {}
+    },
+    "durations": [
+     {
+      "id": "meidum",
+      "years": "1.5",
+      "buildYears": "1",
+      "finYears": "0.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "bent",
+      "years": "6",
+      "buildYears": "5",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "red",
+      "years": "7",
+      "buildYears": "6",
+      "finYears": "1",
+      "binding": "Placement"
+     }
+    ]
+   }
+  },
+  {
+   "name": "preset-best--scope-giza",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 800,
+     "tq": 120,
+     "aq": 50,
+     "dc": 800,
+     "dt": 130,
+     "da": 40,
+     "tc": 800,
+     "tt": 100,
+     "at": 40,
+     "pr": 600,
+     "wf": 100000,
+     "wd": 350,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "khufu",
+     "khafre",
+     "menkaure"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 71,
+    "rowDigest": "623e651c",
+    "colSums": {
+     "cD": "11214999.999999993",
+     "tD": "294999.9999999999",
+     "aD": "148000",
+     "totD": "11658000.000000002",
+     "ru": "0",
+     "effD": "11658000.000000002",
+     "cDef": "0",
+     "tDef": "0",
+     "aDef": "4836.510664147481",
+     "totDef": "4836.510664147481",
+     "accDef": "67711.14929806476",
+     "ra": "0",
+     "cU": "1490.7537378506559",
+     "tU": "796.8665586169645",
+     "aU": "1144.270913870418"
+    },
+    "bcSeq": "5cc2483c",
+    "sum": {
+     "totD": "11658000.000000002",
+     "totCap": "56960318",
+     "totDef": "4836.510664147481",
+     "totR": "0",
+     "py": "71",
+     "dfy": "3",
+     "avgU": "20.99653151902332",
+     "bf": {
+      "Granite Dressing": 3
+     }
+    },
+    "durations": [
+     {
+      "id": "khufu",
+      "years": "10",
+      "buildYears": "8",
+      "finYears": "2",
+      "binding": "Placement"
+     },
+     {
+      "id": "khafre",
+      "years": "8.5",
+      "buildYears": "7",
+      "finYears": "1.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "menkaure",
+      "years": "10.5",
+      "buildYears": "10",
+      "finYears": "0.5",
+      "binding": "Granite Dressing"
+     }
+    ]
+   }
+  },
+  {
+   "name": "solo-meidum--lehner",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "meidum"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 16,
+    "rowDigest": "2c05f74b",
+    "colSums": {
+     "cD": "610000",
+     "tD": "25000.000000000004",
+     "aD": "5000.000000000001",
+     "totD": "639999.9999999999",
+     "ru": "0",
+     "effD": "639999.9999999999",
+     "cDef": "0",
+     "tDef": "0",
+     "aDef": "0",
+     "totDef": "0",
+     "accDef": "0",
+     "ra": "0",
+     "cU": "695.0077932021402",
+     "tU": "193.2890057213546",
+     "aU": "154.6312045770837"
+    },
+    "bcSeq": "e22a686b",
+    "sum": {
+     "totD": "639999.9999999999",
+     "totCap": "1662980.8",
+     "totDef": "0",
+     "totR": "0",
+     "py": "16",
+     "dfy": "0",
+     "avgU": "43.43798707513376",
+     "bf": {}
+    },
+    "durations": [
+     {
+      "id": "meidum",
+      "years": "7.5",
+      "buildYears": "7",
+      "finYears": "0.5",
+      "binding": "Placement"
+     }
+    ]
+   }
+  },
+  {
+   "name": "solo-bent--lehner",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "bent"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 16,
+    "rowDigest": "bc22f19c",
+    "colSums": {
+     "cD": "3380000.0000000005",
+     "tD": "100000.00000000001",
+     "aD": "20000.000000000004",
+     "totD": "3500000",
+     "ru": "0",
+     "effD": "3500000",
+     "cDef": "2063468.0000000005",
+     "tDef": "72.3455497382347",
+     "aDef": "32.30528527758952",
+     "totDef": "2063572.6508350163",
+     "accDef": "19098321.604793455",
+     "ra": "0",
+     "cU": "2899.1316341646475",
+     "tU": "773.1560228854185",
+     "aU": "618.5248183083348"
+    },
+    "bcSeq": "63dd59d8",
+    "sum": {
+     "totD": "3500000",
+     "totCap": "1662980.8",
+     "totDef": "2063572.6508350163",
+     "totR": "0",
+     "py": "16",
+     "dfy": "15",
+     "avgU": "181.19572713529047",
+     "bf": {
+      "Placement": 15
+     }
+    },
+    "durations": [
+     {
+      "id": "bent",
+      "years": "40",
+      "buildYears": "39",
+      "finYears": "1",
+      "binding": "Placement"
+     }
+    ]
+   }
+  },
+  {
+   "name": "solo-red--lehner",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "red"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 16,
+    "rowDigest": "0f6ae455",
+    "colSums": {
+     "cD": "3870000.0000000005",
+     "tD": "120000",
+     "aD": "10000.000000000002",
+     "totD": "4000000.0000000005",
+     "ru": "0",
+     "effD": "4000000.0000000005",
+     "cDef": "2553468",
+     "tDef": "9206.408376963365",
+     "aDef": "0",
+     "totDef": "2562674.408376964",
+     "accDef": "23414437.375786535",
+     "ra": "0",
+     "cU": "2945.067845370951",
+     "tU": "927.7872274625022",
+     "aU": "309.2624091541674"
+    },
+    "bcSeq": "63dd59d8",
+    "sum": {
+     "totD": "4000000.0000000005",
+     "totCap": "1662980.8",
+     "totDef": "2562674.408376964",
+     "totR": "0",
+     "py": "16",
+     "dfy": "15",
+     "avgU": "184.06674033568444",
+     "bf": {
+      "Placement": 15
+     }
+    },
+    "durations": [
+     {
+      "id": "red",
+      "years": "46",
+      "buildYears": "45",
+      "finYears": "1",
+      "binding": "Placement"
+     }
+    ]
+   }
+  },
+  {
+   "name": "solo-khufu--lehner",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "khufu"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 21,
+    "rowDigest": "5cfb518f",
+    "colSums": {
+     "cD": "5955000",
+     "tD": "115000",
+     "aD": "7999.999999999995",
+     "totD": "6078000.000000001",
+     "ru": "0",
+     "effD": "6078000.000000001",
+     "cDef": "4199624.000000001",
+     "tDef": "0",
+     "aDef": "0",
+     "totDef": "4199624.000000001",
+     "accDef": "49629073.31417822",
+     "ra": "0",
+     "cU": "3946.9170508118245",
+     "tU": "889.1294263182311",
+     "aU": "247.40992732333362"
+    },
+    "bcSeq": "9047b16b",
+    "sum": {
+     "totD": "6078000.000000001",
+     "totCap": "2182662.3000000003",
+     "totDef": "4199624.000000001",
+     "totR": "0",
+     "py": "21",
+     "dfy": "20",
+     "avgU": "187.94843099103926",
+     "bf": {
+      "Placement": 20
+     }
+    },
+    "durations": [
+     {
+      "id": "khufu",
+      "years": "70",
+      "buildYears": "68",
+      "finYears": "2",
+      "binding": "Placement"
+     }
+    ]
+   }
+  },
+  {
+   "name": "solo-khafre--lehner",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "khafre"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 27,
+    "rowDigest": "40969e9a",
+    "colSums": {
+     "cD": "4739999.999999999",
+     "tD": "120000.00000000001",
+     "aD": "19999.999999999993",
+     "totD": "4880000",
+     "ru": "0",
+     "effD": "4880000",
+     "cDef": "2470790.4495538706",
+     "tDef": "0",
+     "aDef": "0",
+     "totDef": "2470790.4495538706",
+     "accDef": "38660295.36998577",
+     "ra": "0",
+     "cU": "4700.209348975124",
+     "tU": "927.7872274625023",
+     "aU": "618.5248183083338"
+    },
+    "bcSeq": "d622bd40",
+    "sum": {
+     "totD": "4880000",
+     "totCap": "2806280.1",
+     "totDef": "2470790.4495538706",
+     "totR": "0",
+     "py": "27",
+     "dfy": "25",
+     "avgU": "174.0818277398194",
+     "bf": {
+      "Placement": 25
+     }
+    },
+    "durations": [
+     {
+      "id": "khafre",
+      "years": "56.5",
+      "buildYears": "55",
+      "finYears": "1.5",
+      "binding": "Placement"
+     }
+    ]
+   }
+  },
+  {
+   "name": "solo-menkaure--lehner",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "menkaure"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 21,
+    "rowDigest": "89e02eee",
+    "colSums": {
+     "cD": "520000",
+     "tD": "60000",
+     "aD": "119999.99999999993",
+     "totD": "700000",
+     "ru": "0",
+     "effD": "700000",
+     "cDef": "0",
+     "tDef": "0",
+     "aDef": "65837.1566649349",
+     "totDef": "65837.1566649349",
+     "accDef": "921720.1933090888",
+     "ra": "0",
+     "cU": "592.4656597788737",
+     "tU": "463.89361373125104",
+     "aU": "2462.4586524182932"
+    },
+    "bcSeq": "b2454b60",
+    "sum": {
+     "totD": "700000",
+     "totCap": "2182662.3000000003",
+     "totDef": "65837.1566649349",
+     "totR": "0",
+     "py": "21",
+     "dfy": "9",
+     "avgU": "28.21265046566065",
+     "bf": {
+      "Granite Dressing": 9
+     }
+    },
+    "durations": [
+     {
+      "id": "menkaure",
+      "years": "38.5",
+      "buildYears": "38",
+      "finYears": "0.5",
+      "binding": "Granite Dressing"
+     }
+    ]
+   }
+  },
+  {
+   "name": "toggles--cann0-nl0-seas0",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "meidum",
+     "bent",
+     "red",
+     "khufu",
+     "khafre",
+     "menkaure"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": false,
+    "seas": false
+   },
+   "expect": {
+    "rows": 101,
+    "rowDigest": "8609f7ce",
+    "colSums": {
+     "cD": "19074999.999999985",
+     "tD": "539999.9999999994",
+     "aD": "182999.99999999985",
+     "totD": "19797999.99999999",
+     "ru": "0",
+     "effD": "19797999.99999999",
+     "cDef": "12461750.000000017",
+     "tDef": "34357.14285714286",
+     "aDef": "57000.00000000002",
+     "totDef": "12553107.142857153",
+     "accDef": "797817839.285715",
+     "ra": "0",
+     "cU": "14672.916666666679",
+     "tU": "5142.85714285714",
+     "aU": "6100.000000000006"
+    },
+    "bcSeq": "42d40838",
+    "sum": {
+     "totD": "19797999.99999999",
+     "totCap": "9847500",
+     "totDef": "12553107.142857153",
+     "totR": "0",
+     "py": "101",
+     "dfy": "89",
+     "avgU": "145.27640264026414",
+     "bf": {
+      "Placement": 68,
+      "Granite Dressing": 21
+     }
+    },
+    "durations": [
+     {
+      "id": "meidum",
+      "years": "8.5",
+      "buildYears": "8",
+      "finYears": "0.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "bent",
+      "years": "42",
+      "buildYears": "41",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "red",
+      "years": "48",
+      "buildYears": "47",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "khufu",
+      "years": "73",
+      "buildYears": "71",
+      "finYears": "2",
+      "binding": "Placement"
+     },
+     {
+      "id": "khafre",
+      "years": "58.5",
+      "buildYears": "57",
+      "finYears": "1.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "menkaure",
+      "years": "40.5",
+      "buildYears": "40",
+      "finYears": "0.5",
+      "binding": "Aswan Transport"
+     }
+    ]
+   }
+  },
+  {
+   "name": "toggles--cann0-nl0-seas1",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "meidum",
+     "bent",
+     "red",
+     "khufu",
+     "khafre",
+     "menkaure"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": false,
+    "seas": true
+   },
+   "expect": {
+    "rows": 101,
+    "rowDigest": "a988b43e",
+    "colSums": {
+     "cD": "19074999.999999985",
+     "tD": "539999.9999999994",
+     "aD": "182999.99999999985",
+     "totD": "19797999.99999999",
+     "ru": "0",
+     "effD": "19797999.99999999",
+     "cDef": "12205471.599999988",
+     "tDef": "5149.142857142862",
+     "aDef": "52096.50000000002",
+     "totDef": "12262717.242857125",
+     "accDef": "780982862.385714",
+     "ra": "0",
+     "cU": "14626.845530530214",
+     "tU": "4175.042523581255",
+     "aU": "5659.502087521264"
+    },
+    "bcSeq": "42d40838",
+    "sum": {
+     "totD": "19797999.99999999",
+     "totCap": "10497566.3",
+     "totDef": "12262717.242857125",
+     "totR": "0",
+     "py": "101",
+     "dfy": "89",
+     "avgU": "144.82025277752686",
+     "bf": {
+      "Placement": 68,
+      "Granite Dressing": 21
+     }
+    },
+    "durations": [
+     {
+      "id": "meidum",
+      "years": "7.5",
+      "buildYears": "7",
+      "finYears": "0.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "bent",
+      "years": "40",
+      "buildYears": "39",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "red",
+      "years": "46",
+      "buildYears": "45",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "khufu",
+      "years": "70",
+      "buildYears": "68",
+      "finYears": "2",
+      "binding": "Placement"
+     },
+     {
+      "id": "khafre",
+      "years": "56.5",
+      "buildYears": "55",
+      "finYears": "1.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "menkaure",
+      "years": "38.5",
+      "buildYears": "38",
+      "finYears": "0.5",
+      "binding": "Granite Dressing"
+     }
+    ]
+   }
+  },
+  {
+   "name": "toggles--cann0-nl1-seas0",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "meidum",
+     "bent",
+     "red",
+     "khufu",
+     "khafre",
+     "menkaure"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": false
+   },
+   "expect": {
+    "rows": 101,
+    "rowDigest": "312680e9",
+    "colSums": {
+     "cD": "19075000.000000007",
+     "tD": "539999.9999999998",
+     "aD": "183000.0000000001",
+     "totD": "19798000",
+     "ru": "0",
+     "effD": "19798000",
+     "cDef": "12564910.23197114",
+     "tDef": "47204.94316305838",
+     "aDef": "68464.36063402555",
+     "totDef": "12680579.535768226",
+     "accDef": "811813458.4930054",
+     "ra": "0",
+     "cU": "13926.526559165528",
+     "tU": "5142.857142857144",
+     "aU": "4645.1533508648545"
+    },
+    "bcSeq": "60bf1c7b",
+    "sum": {
+     "totD": "19798000",
+     "totCap": "9847500",
+     "totDef": "12680579.535768226",
+     "totR": "0",
+     "py": "101",
+     "dfy": "74",
+     "avgU": "137.88640157589631",
+     "bf": {
+      "Placement": 65,
+      "Granite Dressing": 9
+     }
+    },
+    "durations": [
+     {
+      "id": "meidum",
+      "years": "8.5",
+      "buildYears": "8",
+      "finYears": "0.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "bent",
+      "years": "42",
+      "buildYears": "41",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "red",
+      "years": "48",
+      "buildYears": "47",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "khufu",
+      "years": "73",
+      "buildYears": "71",
+      "finYears": "2",
+      "binding": "Placement"
+     },
+     {
+      "id": "khafre",
+      "years": "58.5",
+      "buildYears": "57",
+      "finYears": "1.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "menkaure",
+      "years": "40.5",
+      "buildYears": "40",
+      "finYears": "0.5",
+      "binding": "Aswan Transport"
+     }
+    ]
+   }
+  },
+  {
+   "name": "toggles--cann0-nl1-seas1",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "meidum",
+     "bent",
+     "red",
+     "khufu",
+     "khafre",
+     "menkaure"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 101,
+    "rowDigest": "a7889b3c",
+    "colSums": {
+     "cD": "19075000.000000007",
+     "tD": "539999.9999999998",
+     "aD": "183000.0000000001",
+     "totD": "19798000",
+     "ru": "0",
+     "effD": "19798000",
+     "cDef": "12319938.231971145",
+     "tDef": "18774.18018018021",
+     "aDef": "66006.28671078703",
+     "totDef": "12404718.698862113",
+     "accDef": "795835575.4880067",
+     "ra": "0",
+     "cU": "13778.609698679797",
+     "tU": "4175.042523581259",
+     "aU": "4410.811830089546"
+    },
+    "bcSeq": "60bf1c7b",
+    "sum": {
+     "totD": "19798000",
+     "totCap": "10497566.3",
+     "totDef": "12404718.698862113",
+     "totR": "0",
+     "py": "101",
+     "dfy": "74",
+     "avgU": "136.42187820475047",
+     "bf": {
+      "Placement": 65,
+      "Granite Dressing": 9
+     }
+    },
+    "durations": [
+     {
+      "id": "meidum",
+      "years": "7.5",
+      "buildYears": "7",
+      "finYears": "0.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "bent",
+      "years": "40",
+      "buildYears": "39",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "red",
+      "years": "46",
+      "buildYears": "45",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "khufu",
+      "years": "70",
+      "buildYears": "68",
+      "finYears": "2",
+      "binding": "Placement"
+     },
+     {
+      "id": "khafre",
+      "years": "56.5",
+      "buildYears": "55",
+      "finYears": "1.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "menkaure",
+      "years": "38.5",
+      "buildYears": "38",
+      "finYears": "0.5",
+      "binding": "Granite Dressing"
+     }
+    ]
+   }
+  },
+  {
+   "name": "toggles--cann1-nl0-seas0",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "meidum",
+     "bent",
+     "red",
+     "khufu",
+     "khafre",
+     "menkaure"
+    ],
+    "overrides": null,
+    "cann": true,
+    "nl": false,
+    "seas": false
+   },
+   "expect": {
+    "rows": 101,
+    "rowDigest": "f8d22e60",
+    "colSums": {
+     "cD": "25100744.584309112",
+     "tD": "539999.9999999994",
+     "aD": "182999.99999999985",
+     "totD": "25823744.584309164",
+     "ru": "4805714.285714289",
+     "effD": "21018030.298594855",
+     "cDef": "13749754.628951965",
+     "tDef": "34357.14285714286",
+     "aDef": "57000.00000000002",
+     "totDef": "13841111.771809105",
+     "accDef": "890400633.1204858",
+     "ra": "55713131.24512102",
+     "cU": "13041.061732041415",
+     "tU": "5142.85714285714",
+     "aU": "6100.000000000006"
+    },
+    "bcSeq": "42d40838",
+    "sum": {
+     "totD": "25823744.584309164",
+     "totCap": "9847500",
+     "totDef": "13841111.771809105",
+     "totR": "6280000",
+     "py": "101",
+     "dfy": "89",
+     "avgU": "129.11942308951896",
+     "bf": {
+      "Placement": 68,
+      "Granite Dressing": 21
+     }
+    },
+    "durations": [
+     {
+      "id": "meidum",
+      "years": "11.5",
+      "buildYears": "11",
+      "finYears": "0.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "bent",
+      "years": "53",
+      "buildYears": "52",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "red",
+      "years": "61",
+      "buildYears": "60",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "khufu",
+      "years": "95",
+      "buildYears": "93",
+      "finYears": "2",
+      "binding": "Placement"
+     },
+     {
+      "id": "khafre",
+      "years": "77.5",
+      "buildYears": "76",
+      "finYears": "1.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "menkaure",
+      "years": "40.5",
+      "buildYears": "40",
+      "finYears": "0.5",
+      "binding": "Aswan Transport"
+     }
+    ]
+   }
+  },
+  {
+   "name": "toggles--cann1-nl0-seas1",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "meidum",
+     "bent",
+     "red",
+     "khufu",
+     "khafre",
+     "menkaure"
+    ],
+    "overrides": null,
+    "cann": true,
+    "nl": false,
+    "seas": true
+   },
+   "expect": {
+    "rows": 101,
+    "rowDigest": "d727ce9f",
+    "colSums": {
+     "cD": "25100744.584309112",
+     "tD": "539999.9999999994",
+     "aD": "182999.99999999985",
+     "totD": "25823744.584309164",
+     "ru": "4805714.285714289",
+     "effD": "21018030.298594855",
+     "cDef": "13493476.228952004",
+     "tDef": "5149.142857142862",
+     "aDef": "52096.50000000002",
+     "totDef": "13550721.87180914",
+     "accDef": "873565656.2204875",
+     "ra": "55713131.24512102",
+     "cU": "12857.849353627029",
+     "tU": "4175.042523581255",
+     "aU": "5659.502087521264"
+    },
+    "bcSeq": "42d40838",
+    "sum": {
+     "totD": "25823744.584309164",
+     "totCap": "10497566.3",
+     "totDef": "13550721.87180914",
+     "totR": "6280000",
+     "py": "101",
+     "dfy": "89",
+     "avgU": "127.30543914482207",
+     "bf": {
+      "Placement": 68,
+      "Granite Dressing": 21
+     }
+    },
+    "durations": [
+     {
+      "id": "meidum",
+      "years": "10.5",
+      "buildYears": "10",
+      "finYears": "0.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "bent",
+      "years": "51",
+      "buildYears": "50",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "red",
+      "years": "59",
+      "buildYears": "58",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "khufu",
+      "years": "91",
+      "buildYears": "89",
+      "finYears": "2",
+      "binding": "Placement"
+     },
+     {
+      "id": "khafre",
+      "years": "73.5",
+      "buildYears": "72",
+      "finYears": "1.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "menkaure",
+      "years": "38.5",
+      "buildYears": "38",
+      "finYears": "0.5",
+      "binding": "Granite Dressing"
+     }
+    ]
+   }
+  },
+  {
+   "name": "toggles--cann1-nl1-seas0",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "meidum",
+     "bent",
+     "red",
+     "khufu",
+     "khafre",
+     "menkaure"
+    ],
+    "overrides": null,
+    "cann": true,
+    "nl": true,
+    "seas": false
+   },
+   "expect": {
+    "rows": 101,
+    "rowDigest": "eab4713c",
+    "colSums": {
+     "cD": "25100744.584309135",
+     "tD": "539999.9999999998",
+     "aD": "183000.0000000001",
+     "totD": "25823744.584309135",
+     "ru": "4805714.285714285",
+     "effD": "21018030.298594855",
+     "cDef": "13864253.276242696",
+     "tDef": "47204.94316305838",
+     "aDef": "68464.36063402555",
+     "totDef": "13979922.580039782",
+     "accDef": "905176653.5239165",
+     "ra": "54715314.664854355",
+     "cU": "13370.57962779558",
+     "tU": "5142.857142857144",
+     "aU": "4645.1533508648545"
+    },
+    "bcSeq": "04db9460",
+    "sum": {
+     "totD": "25823744.584309135",
+     "totCap": "9847500",
+     "totDef": "13979922.580039782",
+     "totR": "6280000",
+     "py": "101",
+     "dfy": "73",
+     "avgU": "132.38197651282752",
+     "bf": {
+      "Placement": 64,
+      "Granite Dressing": 9
+     }
+    },
+    "durations": [
+     {
+      "id": "meidum",
+      "years": "11.5",
+      "buildYears": "11",
+      "finYears": "0.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "bent",
+      "years": "53",
+      "buildYears": "52",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "red",
+      "years": "61",
+      "buildYears": "60",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "khufu",
+      "years": "95",
+      "buildYears": "93",
+      "finYears": "2",
+      "binding": "Placement"
+     },
+     {
+      "id": "khafre",
+      "years": "77.5",
+      "buildYears": "76",
+      "finYears": "1.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "menkaure",
+      "years": "40.5",
+      "buildYears": "40",
+      "finYears": "0.5",
+      "binding": "Aswan Transport"
+     }
+    ]
+   }
+  },
+  {
+   "name": "toggles--cann1-nl1-seas1",
+   "tier": 1,
+   "intent": "intended",
+   "note": null,
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "meidum",
+     "bent",
+     "red",
+     "khufu",
+     "khafre",
+     "menkaure"
+    ],
+    "overrides": null,
+    "cann": true,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 101,
+    "rowDigest": "f4b2eb0b",
+    "colSums": {
+     "cD": "25100744.584309135",
+     "tD": "539999.9999999998",
+     "aD": "183000.0000000001",
+     "totD": "25823744.584309135",
+     "ru": "4805714.285714285",
+     "effD": "21018030.298594855",
+     "cDef": "13623050.076242698",
+     "tDef": "18774.18018018021",
+     "aDef": "66006.28671078703",
+     "totDef": "13707830.543133665",
+     "accDef": "889375904.1189183",
+     "ra": "54715314.664854355",
+     "cU": "13200.082588970447",
+     "tU": "4175.042523581259",
+     "aU": "4410.811830089546"
+    },
+    "bcSeq": "04db9460",
+    "sum": {
+     "totD": "25823744.584309135",
+     "totCap": "10497566.3",
+     "totDef": "13707830.543133665",
+     "totR": "6280000",
+     "py": "101",
+     "dfy": "73",
+     "avgU": "130.69388701950936",
+     "bf": {
+      "Placement": 64,
+      "Granite Dressing": 9
+     }
+    },
+    "durations": [
+     {
+      "id": "meidum",
+      "years": "10.5",
+      "buildYears": "10",
+      "finYears": "0.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "bent",
+      "years": "51",
+      "buildYears": "50",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "red",
+      "years": "59",
+      "buildYears": "58",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "khufu",
+      "years": "91",
+      "buildYears": "89",
+      "finYears": "2",
+      "binding": "Placement"
+     },
+     {
+      "id": "khafre",
+      "years": "73.5",
+      "buildYears": "72",
+      "finYears": "1.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "menkaure",
+      "years": "38.5",
+      "buildYears": "38",
+      "finYears": "0.5",
+      "binding": "Granite Dressing"
+     }
+    ]
+   }
+  },
+  {
+   "name": "tie--equal-stage-capacities--all",
+   "tier": 3,
+   "intent": "current",
+   "note": "Plateau transport ties placement, casing dressing ties Tura transport, granite dressing ties Aswan transport. Pins which stage receives the binding label when capacities are exactly equal.",
+   "input": {
+    "capacities": {
+     "qr": 500,
+     "tq": 60,
+     "aq": 20,
+     "dc": 500,
+     "dt": 35,
+     "da": 10,
+     "tc": 280,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "meidum",
+     "bent",
+     "red",
+     "khufu",
+     "khafre",
+     "menkaure"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": false
+   },
+   "expect": {
+    "rows": 101,
+    "rowDigest": "831a312b",
+    "colSums": {
+     "cD": "19075000.000000007",
+     "tD": "539999.9999999998",
+     "aD": "183000.0000000001",
+     "totD": "19798000",
+     "ru": "0",
+     "effD": "19798000",
+     "cDef": "12564910.23197114",
+     "tDef": "47204.94316305838",
+     "aDef": "68464.36063402555",
+     "totDef": "12680579.535768226",
+     "accDef": "811813458.4930054",
+     "ra": "0",
+     "cU": "13926.526559165528",
+     "tU": "5142.857142857144",
+     "aU": "4645.1533508648545"
+    },
+    "bcSeq": "bce45991",
+    "sum": {
+     "totD": "19798000",
+     "totCap": "9847500",
+     "totDef": "12680579.535768226",
+     "totR": "0",
+     "py": "101",
+     "dfy": "74",
+     "avgU": "137.88640157589631",
+     "bf": {
+      "Plateau Trnsp": 65,
+      "Granite Dressing": 9
+     }
+    },
+    "durations": [
+     {
+      "id": "meidum",
+      "years": "8.5",
+      "buildYears": "8",
+      "finYears": "0.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "bent",
+      "years": "42",
+      "buildYears": "41",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "red",
+      "years": "48",
+      "buildYears": "47",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "khufu",
+      "years": "73",
+      "buildYears": "71",
+      "finYears": "2",
+      "binding": "Placement"
+     },
+     {
+      "id": "khafre",
+      "years": "58.5",
+      "buildYears": "57",
+      "finYears": "1.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "menkaure",
+      "years": "40.5",
+      "buildYears": "40",
+      "finYears": "0.5",
+      "binding": "Aswan Transport"
+     }
+    ]
+   }
+  },
+  {
+   "name": "tie--equal-stage-capacities--sneferu",
+   "tier": 3,
+   "intent": "current",
+   "note": "Plateau transport ties placement, casing dressing ties Tura transport, granite dressing ties Aswan transport. Pins which stage receives the binding label when capacities are exactly equal.",
+   "input": {
+    "capacities": {
+     "qr": 500,
+     "tq": 60,
+     "aq": 20,
+     "dc": 500,
+     "dt": 35,
+     "da": 10,
+     "tc": 280,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "meidum",
+     "bent",
+     "red"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": false
+   },
+   "expect": {
+    "rows": 36,
+    "rowDigest": "4593fa69",
+    "colSums": {
+     "cD": "7860000",
+     "tD": "245000.00000000006",
+     "aD": "35000",
+     "totD": "8140000",
+     "ru": "0",
+     "effD": "8140000",
+     "cDef": "5304899.782417269",
+     "tDef": "37403.14136125658",
+     "aDef": "525.7039690906499",
+     "totDef": "5342828.627747618",
+     "accDef": "73918495.86769736",
+     "ra": "0",
+     "cU": "5493.362529346035",
+     "tU": "2333.333333333334",
+     "aU": "1166.6666666666663"
+    },
+    "bcSeq": "699f0e3a",
+    "sum": {
+     "totD": "8140000",
+     "totCap": "3510000",
+     "totDef": "5342828.627747618",
+     "totR": "0",
+     "py": "36",
+     "dfy": "25",
+     "avgU": "152.59340359294544",
+     "bf": {
+      "Plateau Trnsp": 25
+     }
+    },
+    "durations": [
+     {
+      "id": "meidum",
+      "years": "8.5",
+      "buildYears": "8",
+      "finYears": "0.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "bent",
+      "years": "42",
+      "buildYears": "41",
+      "finYears": "1",
+      "binding": "Placement"
+     },
+     {
+      "id": "red",
+      "years": "48",
+      "buildYears": "47",
+      "finYears": "1",
+      "binding": "Placement"
+     }
+    ]
+   }
+  },
+  {
+   "name": "tie--equal-stage-capacities--giza",
+   "tier": 3,
+   "intent": "current",
+   "note": "Plateau transport ties placement, casing dressing ties Tura transport, granite dressing ties Aswan transport. Pins which stage receives the binding label when capacities are exactly equal.",
+   "input": {
+    "capacities": {
+     "qr": 500,
+     "tq": 60,
+     "aq": 20,
+     "dc": 500,
+     "dt": 35,
+     "da": 10,
+     "tc": 280,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "khufu",
+     "khafre",
+     "menkaure"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": false
+   },
+   "expect": {
+    "rows": 71,
+    "rowDigest": "be5ca33a",
+    "colSums": {
+     "cD": "11214999.999999993",
+     "tD": "294999.9999999999",
+     "aD": "148000",
+     "totD": "11658000.000000002",
+     "ru": "0",
+     "effD": "11658000.000000002",
+     "cDef": "6840010.449553871",
+     "tDef": "3585.58558558559",
+     "aDef": "67938.6566649349",
+     "totDef": "6911534.691804391",
+     "accDef": "361625291.0109015",
+     "ra": "0",
+     "cU": "9372.298328643305",
+     "tU": "2809.523809523811",
+     "aU": "3478.486684198184"
+    },
+    "bcSeq": "1769f921",
+    "sum": {
+     "totD": "11658000.000000002",
+     "totCap": "6922500",
+     "totDef": "6911534.691804391",
+     "totR": "0",
+     "py": "71",
+     "dfy": "54",
+     "avgU": "132.00420181187752",
+     "bf": {
+      "Plateau Trnsp": 45,
+      "Granite Dressing": 9
+     }
+    },
+    "durations": [
+     {
+      "id": "khufu",
+      "years": "73",
+      "buildYears": "71",
+      "finYears": "2",
+      "binding": "Placement"
+     },
+     {
+      "id": "khafre",
+      "years": "58.5",
+      "buildYears": "57",
+      "finYears": "1.5",
+      "binding": "Placement"
+     },
+     {
+      "id": "menkaure",
+      "years": "40.5",
+      "buildYears": "40",
+      "finYears": "0.5",
+      "binding": "Aswan Transport"
+     }
+    ]
+   }
+  },
+  {
+   "name": "labour--allocation-over-100",
+   "tier": 3,
+   "intent": "intended",
+   "note": "Allocations sum to 135 per cent. The model scales on them regardless. Deliberate: the UI warns rather than clamps.",
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 45,
+     "lT": 35,
+     "lD": 30,
+     "lP": 25
+    },
+    "enabled": [
+     "meidum",
+     "bent",
+     "red",
+     "khufu",
+     "khafre",
+     "menkaure"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 101,
+    "rowDigest": "651bddf7",
+    "colSums": {
+     "cD": "19075000.000000007",
+     "tD": "539999.9999999998",
+     "aD": "183000.0000000001",
+     "totD": "19798000",
+     "ru": "0",
+     "effD": "19798000",
+     "cDef": "9499136.238993656",
+     "tDef": "18774.18018018021",
+     "aDef": "66006.28671078703",
+     "totDef": "9583916.705884622",
+     "accDef": "633647295.9979135",
+     "ra": "0",
+     "cU": "11925.480786519392",
+     "tU": "4175.042523581259",
+     "aU": "4410.811830089546"
+    },
+    "bcSeq": "c0726f68",
+    "sum": {
+     "totD": "19798000",
+     "totCap": "14965559.86",
+     "totDef": "9583916.705884622",
+     "totR": "0",
+     "py": "101",
+     "dfy": "72",
+     "avgU": "118.07406719326131",
+     "bf": {
+      "Core Dressing": 63,
+      "Granite Dressing": 9
+     }
+    },
+    "durations": [
+     {
+      "id": "meidum",
+      "years": "5.5",
+      "buildYears": "5",
+      "finYears": "0.5",
+      "binding": "Core Dressing"
+     },
+     {
+      "id": "bent",
+      "years": "27",
+      "buildYears": "26",
+      "finYears": "1",
+      "binding": "Core Dressing"
+     },
+     {
+      "id": "red",
+      "years": "31",
+      "buildYears": "30",
+      "finYears": "1",
+      "binding": "Core Dressing"
+     },
+     {
+      "id": "khufu",
+      "years": "48",
+      "buildYears": "46",
+      "finYears": "2",
+      "binding": "Core Dressing"
+     },
+     {
+      "id": "khafre",
+      "years": "37.5",
+      "buildYears": "36",
+      "finYears": "1.5",
+      "binding": "Core Dressing"
+     },
+     {
+      "id": "menkaure",
+      "years": "38.5",
+      "buildYears": "38",
+      "finYears": "0.5",
+      "binding": "Granite Dressing"
+     }
+    ]
+   }
+  },
+  {
+   "name": "labour--distinct-shares--seas1",
+   "tier": 3,
+   "intent": "intended",
+   "note": "Quarry, transport, dressing, and placement shares are all different, so each scalar is independently pinned in both the seasonal and non-seasonal branches.",
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 30,
+     "lT": 20,
+     "lD": 35,
+     "lP": 15
+    },
+    "enabled": [
+     "meidum",
+     "bent",
+     "red",
+     "khufu",
+     "khafre",
+     "menkaure"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 101,
+    "rowDigest": "f3176eba",
+    "colSums": {
+     "cD": "19075000.000000007",
+     "tD": "539999.9999999998",
+     "aD": "183000.0000000001",
+     "totD": "19798000",
+     "ru": "0",
+     "effD": "19798000",
+     "cDef": "12915910.23197114",
+     "tDef": "18774.18018018021",
+     "aDef": "66006.28671078703",
+     "totDef": "13000690.698862106",
+     "accDef": "829714291.4880067",
+     "ra": "0",
+     "cU": "14131.41463728334",
+     "tU": "4175.042523581259",
+     "aU": "4410.811830089546"
+    },
+    "bcSeq": "bce45991",
+    "sum": {
+     "totD": "19798000",
+     "totCap": "9571517.5",
+     "totDef": "13000690.698862106",
+     "totR": "0",
+     "py": "101",
+     "dfy": "74",
+     "avgU": "139.91499640874594",
+     "bf": {
+      "Plateau Trnsp": 65,
+      "Granite Dressing": 9
+     }
+    },
+    "durations": [
+     {
+      "id": "meidum",
+      "years": "8.5",
+      "buildYears": "8",
+      "finYears": "0.5",
+      "binding": "Plateau Trnsp"
+     },
+     {
+      "id": "bent",
+      "years": "45",
+      "buildYears": "44",
+      "finYears": "1",
+      "binding": "Plateau Trnsp"
+     },
+     {
+      "id": "red",
+      "years": "51",
+      "buildYears": "50",
+      "finYears": "1",
+      "binding": "Plateau Trnsp"
+     },
+     {
+      "id": "khufu",
+      "years": "78",
+      "buildYears": "76",
+      "finYears": "2",
+      "binding": "Plateau Trnsp"
+     },
+     {
+      "id": "khafre",
+      "years": "62.5",
+      "buildYears": "61",
+      "finYears": "1.5",
+      "binding": "Plateau Trnsp"
+     },
+     {
+      "id": "menkaure",
+      "years": "38.5",
+      "buildYears": "38",
+      "finYears": "0.5",
+      "binding": "Granite Dressing"
+     }
+    ]
+   }
+  },
+  {
+   "name": "labour--distinct-shares--seas0",
+   "tier": 3,
+   "intent": "intended",
+   "note": "Quarry, transport, dressing, and placement shares are all different, so each scalar is independently pinned in both the seasonal and non-seasonal branches.",
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 30,
+     "lT": 20,
+     "lD": 35,
+     "lP": 15
+    },
+    "enabled": [
+     "meidum",
+     "bent",
+     "red",
+     "khufu",
+     "khafre",
+     "menkaure"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": false
+   },
+   "expect": {
+    "rows": 101,
+    "rowDigest": "d3afbad8",
+    "colSums": {
+     "cD": "19075000.000000007",
+     "tD": "539999.9999999998",
+     "aD": "183000.0000000001",
+     "totD": "19798000",
+     "ru": "0",
+     "effD": "19798000",
+     "cDef": "13347899.782417266",
+     "tDef": "47204.94316305838",
+     "aDef": "68464.36063402555",
+     "totDef": "13463569.086214352",
+     "accDef": "856296956.9144186",
+     "ra": "0",
+     "cU": "14348.491933537076",
+     "tU": "5142.857142857144",
+     "aU": "4645.1533508648545"
+    },
+    "bcSeq": "3bf0a468",
+    "sum": {
+     "totD": "19798000",
+     "totCap": "8635500",
+     "totDef": "13463569.086214352",
+     "totR": "0",
+     "py": "101",
+     "dfy": "75",
+     "avgU": "142.064276569674",
+     "bf": {
+      "Plateau Trnsp": 66,
+      "Granite Dressing": 9
+     }
+    },
+    "durations": [
+     {
+      "id": "meidum",
+      "years": "9.5",
+      "buildYears": "9",
+      "finYears": "0.5",
+      "binding": "Plateau Trnsp"
+     },
+     {
+      "id": "bent",
+      "years": "48",
+      "buildYears": "47",
+      "finYears": "1",
+      "binding": "Plateau Trnsp"
+     },
+     {
+      "id": "red",
+      "years": "55",
+      "buildYears": "54",
+      "finYears": "1",
+      "binding": "Plateau Trnsp"
+     },
+     {
+      "id": "khufu",
+      "years": "85",
+      "buildYears": "83",
+      "finYears": "2",
+      "binding": "Plateau Trnsp"
+     },
+     {
+      "id": "khafre",
+      "years": "67.5",
+      "buildYears": "66",
+      "finYears": "1.5",
+      "binding": "Plateau Trnsp"
+     },
+     {
+      "id": "menkaure",
+      "years": "40.5",
+      "buildYears": "40",
+      "finYears": "0.5",
+      "binding": "Aswan Transport"
+     }
+    ]
+   }
+  },
+  {
+   "name": "labour--allocation-over-100--nonseasonal",
+   "tier": 3,
+   "intent": "intended",
+   "note": "As the seasonal over-allocation case, against the non-seasonal capacity branch.",
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 45,
+     "lT": 35,
+     "lD": 30,
+     "lP": 25
+    },
+    "enabled": [
+     "meidum",
+     "bent",
+     "red",
+     "khufu",
+     "khafre",
+     "menkaure"
+    ],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": false
+   },
+   "expect": {
+    "rows": 101,
+    "rowDigest": "b16fcc47",
+    "colSums": {
+     "cD": "19075000.000000007",
+     "tD": "539999.9999999998",
+     "aD": "183000.0000000001",
+     "totD": "19798000",
+     "ru": "0",
+     "effD": "19798000",
+     "cDef": "10104336.918993643",
+     "tDef": "47204.94316305838",
+     "aDef": "68464.36063402555",
+     "totDef": "10220006.22279073",
+     "accDef": "670743464.2829113",
+     "ra": "0",
+     "cU": "12377.956227881266",
+     "tU": "5142.857142857144",
+     "aU": "4645.1533508648545"
+    },
+    "bcSeq": "c0726f68",
+    "sum": {
+     "totD": "19798000",
+     "totCap": "13725900",
+     "totDef": "10220006.22279073",
+     "totR": "0",
+     "py": "101",
+     "dfy": "72",
+     "avgU": "122.55402205823036",
+     "bf": {
+      "Core Dressing": 63,
+      "Granite Dressing": 9
+     }
+    },
+    "durations": [
+     {
+      "id": "meidum",
+      "years": "5.5",
+      "buildYears": "5",
+      "finYears": "0.5",
+      "binding": "Core Dressing"
+     },
+     {
+      "id": "bent",
+      "years": "29",
+      "buildYears": "28",
+      "finYears": "1",
+      "binding": "Core Dressing"
+     },
+     {
+      "id": "red",
+      "years": "33",
+      "buildYears": "32",
+      "finYears": "1",
+      "binding": "Core Dressing"
+     },
+     {
+      "id": "khufu",
+      "years": "51",
+      "buildYears": "49",
+      "finYears": "2",
+      "binding": "Core Dressing"
+     },
+     {
+      "id": "khafre",
+      "years": "40.5",
+      "buildYears": "39",
+      "finYears": "1.5",
+      "binding": "Core Dressing"
+     },
+     {
+      "id": "menkaure",
+      "years": "40.5",
+      "buildYears": "40",
+      "finYears": "0.5",
+      "binding": "Aswan Transport"
+     }
+    ]
+   }
+  },
+  {
+   "name": "edge--empty-scope",
+   "tier": 3,
+   "intent": "intended",
+   "note": "No enabled structures returns a zeroed summary and no rows.",
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [],
+    "overrides": null,
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 0,
+    "rowDigest": "811c9dc5",
+    "colSums": {
+     "cD": "0",
+     "tD": "0",
+     "aD": "0",
+     "totD": "0",
+     "ru": "0",
+     "effD": "0",
+     "cDef": "0",
+     "tDef": "0",
+     "aDef": "0",
+     "totDef": "0",
+     "accDef": "0",
+     "ra": "0",
+     "cU": "0",
+     "tU": "0",
+     "aU": "0"
+    },
+    "bcSeq": "811c9dc5",
+    "sum": {
+     "totD": "0",
+     "totCap": "0",
+     "totDef": "0",
+     "totR": "0",
+     "py": "0",
+     "dfy": "0",
+     "avgU": "0",
+     "bf": {}
+    },
+    "durations": []
+   }
+  },
+  {
+   "name": "edge--same-year-dates",
+   "tier": 3,
+   "intent": "intended",
+   "note": "sy === ey. Normalisation allows N=1 but the annual loop exits on dur<=0, so demand is zero. The chronology guard in setStruct enforces a minimum one-year span, so this state is no longer reachable from the interface. Retained as a defensive record for programmatic callers.",
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "khufu"
+    ],
+    "overrides": [
+     {
+      "id": "khufu",
+      "ey": -2580
+     }
+    ],
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 1,
+    "rowDigest": "4450da1b",
+    "colSums": {
+     "cD": "0",
+     "tD": "0",
+     "aD": "0",
+     "totD": "0",
+     "ru": "0",
+     "effD": "0",
+     "cDef": "0",
+     "tDef": "0",
+     "aDef": "0",
+     "totDef": "0",
+     "accDef": "0",
+     "ra": "0",
+     "cU": "0",
+     "tU": "0",
+     "aU": "0"
+    },
+    "bcSeq": "304ff7fb",
+    "sum": {
+     "totD": "0",
+     "totCap": "103936.3",
+     "totDef": "0",
+     "totR": "0",
+     "py": "1",
+     "dfy": "0",
+     "avgU": "0",
+     "bf": {}
+    },
+    "durations": [
+     {
+      "id": "khufu",
+      "years": "70",
+      "buildYears": "68",
+      "finYears": "2",
+      "binding": "Placement"
+     }
+    ]
+   }
+  },
+  {
+   "name": "edge--reversed-dates",
+   "tier": 3,
+   "intent": "intended",
+   "note": "ey < sy reaches the ty<=0 guard and returns an empty programme. The chronology guard in setStruct now prevents the sliders producing this, so it is unreachable from the interface. Retained as a defensive record for programmatic callers.",
+   "input": {
+    "capacities": {
+     "qr": 340,
+     "tq": 40,
+     "aq": 15,
+     "dc": 340,
+     "dt": 50,
+     "da": 10,
+     "tc": 300,
+     "tt": 35,
+     "at": 10,
+     "pr": 280,
+     "wf": 25000,
+     "wd": 300,
+     "lQ": 35,
+     "lT": 25,
+     "lD": 25,
+     "lP": 15
+    },
+    "enabled": [
+     "khufu"
+    ],
+    "overrides": [
+     {
+      "id": "khufu",
+      "sy": -2560,
+      "ey": -2580
+     }
+    ],
+    "cann": false,
+    "nl": true,
+    "seas": true
+   },
+   "expect": {
+    "rows": 0,
+    "rowDigest": "811c9dc5",
+    "colSums": {
+     "cD": "0",
+     "tD": "0",
+     "aD": "0",
+     "totD": "0",
+     "ru": "0",
+     "effD": "0",
+     "cDef": "0",
+     "tDef": "0",
+     "aDef": "0",
+     "totDef": "0",
+     "accDef": "0",
+     "ra": "0",
+     "cU": "0",
+     "tU": "0",
+     "aU": "0"
+    },
+    "bcSeq": "811c9dc5",
+    "sum": {
+     "totD": "0",
+     "totCap": "0",
+     "totDef": "0",
+     "totR": "0",
+     "py": "0",
+     "dfy": "0",
+     "avgU": "0",
+     "bf": {}
+    },
+    "durations": [
+     {
+      "id": "khufu",
+      "years": "70",
+      "buildYears": "68",
+      "finYears": "2",
+      "binding": "Placement"
+     }
+    ]
+   }
+  }
+ ]
+}
